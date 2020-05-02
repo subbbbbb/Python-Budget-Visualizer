@@ -26,4 +26,9 @@ def getLengths():
         sideB = float(input("Enter in the length for the second side"))
         sideC = math.sqrt(math.pow(sideA, 2) + math.pow(sideB, 2))
         print("Your hypotenuse is " + str(sideC) + " units.")
- 
+    if (typeOfTriangle == "leg"):
+            hypotenuse = float(input("Enter in the length of the hypotenuse"))
+            leg2 = float(input("Enter in the length of the leg that you know of"))
+            leg1 = math.sqrt(math.pow(hypotenuse, 2) - math.pow(leg2, 2))
+            print("The length of your leg is " + str(leg1) + " units.")
+
