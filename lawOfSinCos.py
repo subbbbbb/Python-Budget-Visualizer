@@ -35,14 +35,24 @@ def getAngles():
     numOfAngles = int(input("How many angle measures do you know already?"))
     if (numOfAngles == 1):
         print("Try using the law of cosines or law of sines calculators")
-        main()
+        main() # add a function here that would transport the user straight ot the law of sines or cosines calculator
     if (numOfAngles == 2):
         angleA = float(input("Enter in the angle measure for the first side"))
         angleB = float(input("Enter in the angle measure for the second side"))
         angleC = 180 - (angleA + angleB)
         print("The angle measure of the unknown angle is " +
               str(angleC) + " degrees.")
-
+def lawOfSin():
+    option = input(
+        "For this calculator to work you must have a) two sides and an included angle |OR| b) two angles and an included side |OR| c) n/a")
+    if (option == "a"):
+        angleA = float(input("Enter the degree measure for angle A"))
+        sideA = float(input("Enter the side measure for side A"))
+        extra = float(input("Enter the measure for the extra angle or side"))
+        angleA = math.radians(angleA)
+        answer = (math.degrees(math.asin(math.sin(angleA) / sideA * extra)))
+        print("The measure of the angle is " + str(answer) + "degrees")
+ 
 
 
 
