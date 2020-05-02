@@ -31,4 +31,18 @@ def getLengths():
             leg2 = float(input("Enter in the length of the leg that you know of"))
             leg1 = math.sqrt(math.pow(hypotenuse, 2) - math.pow(leg2, 2))
             print("The length of your leg is " + str(leg1) + " units.")
+def getAngles():
+    numOfAngles = int(input("How many angle measures do you know already?"))
+    if (numOfAngles == 1):
+        print("Try using the law of cosines or law of sines calculators")
+        main()
+    if (numOfAngles == 2):
+        angleA = float(input("Enter in the angle measure for the first side"))
+        angleB = float(input("Enter in the angle measure for the second side"))
+        angleC = 180 - (angleA + angleB)
+        print("The angle measure of the unknown angle is " +
+              str(angleC) + " degrees.")
+
+
+
 
