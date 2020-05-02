@@ -82,6 +82,25 @@ def lawOfCos():
         print("The measure of side A is: " + str(measureA))
         print("The measure of angle B is: " + str(degB))
         print("The measure of angle C is: " + str(degC))
+    elif option == "b":
+            sideA = float(input("Enter the side measure for side A"))
+            sideB = float(input("Enter the side measure for side B"))
+            sideC = float(input("Enter the side measure for side C"))
+            measure1 = math.degrees(math.acos((sideA **
+                                            2 - sideB ** 2 - sideC ** 2) / (
+                                                    -2 * sideB * sideC)))
+            measure2 = math.degrees(math.acos((sideB **
+                                            2 - sideA ** 2 - sideC ** 2)))
+            measure3 = (180 - (math.degrees(math.acos((sideA ** 2 - sideB ** 2 - sideC ** 2) /
+                                                    (-2 * sideB * sideC)))) - (math.degrees(
+                math.acos((sideB ** 2 - sideA ** 2 - sideC ** 2) / (-2 * sideA * sideC)))))
+            print("The measure of angle A is: " + str(measure1))
+            print("The measure of angle B is: " + str(measure2))
+            print("The measure of angle C is: " + str(measure3))
+    else:
+        print("Enter a, b, or c")
+        lawOfCos()
+
 
 
 
