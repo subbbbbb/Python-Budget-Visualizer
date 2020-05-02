@@ -59,7 +59,14 @@ def lawOfSin():
         angleA = math.radians(angleA)
         answer = (math.sin(math.radians(extra)) * sideA) / math.sin(angleA)
         print("The measure of the side is " + str(answer) + " units")
-    
+    elif (option == "c"):
+        print("Try the law of cosines calculator")
+        lawOfCos()
+    else:
+        print("Enter a, b, or c")
+        lawOfSin()
+
+
 
 
 
