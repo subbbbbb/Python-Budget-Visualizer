@@ -90,7 +90,8 @@ def lawOfCos():
                                             2 - sideB ** 2 - sideC ** 2) / (
                                                     -2 * sideB * sideC)))
             measure2 = math.degrees(math.acos((sideB **
-                                            2 - sideA ** 2 - sideC ** 2)))
+                                            2 - sideA ** 2 - sideC ** 2) / (
+                                                    -2 * sideA * sideC)))
             measure3 = (180 - (math.degrees(math.acos((sideA ** 2 - sideB ** 2 - sideC ** 2) /
                                                     (-2 * sideB * sideC)))) - (math.degrees(
                 math.acos((sideB ** 2 - sideA ** 2 - sideC ** 2) / (-2 * sideA * sideC)))))
