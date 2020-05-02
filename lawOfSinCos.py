@@ -52,7 +52,14 @@ def lawOfSin():
         angleA = math.radians(angleA)
         answer = (math.degrees(math.asin(math.sin(angleA) / sideA * extra)))
         print("The measure of the angle is " + str(answer) + "degrees")
- 
+    if(option == "b"):
+        angleA = float(input("Enter the degree measure for angle A"))
+        sideA = float(input("Enter the side measure for side A"))
+        extra = float(input("Enter the measure for the extra angle or side"))
+        angleA = math.radians(angleA)
+        answer = (math.sin(math.radians(extra)) * sideA) / math.sin(angleA)
+        print("The measure of the side is " + str(answer) + " units")
+    
 
 
 
