@@ -66,7 +66,16 @@ def lawOfSin():
         print("Enter a, b, or c")
         lawOfSin()
 
-
+def lawOfCos():
+    option = input(
+        "For this calculator to work you must have a) two sides and one non-included angle |OR| b) three sides")
+    if option == "a":
+        angleA = float(input("Enter the degree measure for angle A"))
+        sideB = float(input("Enter the side measure for side B"))
+        sideC = float(input("Enter the side measure for side C"))
+        x = math.sqrt(sideB ** 2 + sideC ** 2 - 2 * sideB *
+                      sideC * math.cos(math.radians(angleA)))
+ 
 
 
 
