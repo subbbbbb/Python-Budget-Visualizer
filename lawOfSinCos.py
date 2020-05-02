@@ -17,3 +17,13 @@ def main():
         print("Enter in a correct option:")
         main() # this makes the user always enter in a correct input or else it redos the main method
 
+def getLengths():
+    print("Keep in mind, this code only works for right triangles")
+    typeOfTriangle = input(
+        "Do you want to solve for the hypotenuse or a leg of the triangle?")
+    if (typeOfTriangle == "hypotenuse"):
+        sideA = float(input("Enter in the length for the first side"))
+        sideB = float(input("Enter in the length for the second side"))
+        sideC = math.sqrt(math.pow(sideA, 2) + math.pow(sideB, 2))
+        print("Your hypotenuse is " + str(sideC) + " units.")
+ 
