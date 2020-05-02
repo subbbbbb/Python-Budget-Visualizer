@@ -77,11 +77,11 @@ def lawOfCos():
                       sideC * math.cos(math.radians(angleA)))
         measureA = math.sqrt(sideB ** 2 + sideC **
                                     2 - 2 * sideB * sideC * math.cos(math.radians(angleA)))
-                degB = math.degrees(math.acos((sideB ** 2 - x ** 2 - sideC ** 2) / (-2 * x * sideC)))
-                degC = 180 - angleA - (math.degrees(math.acos((sideB ** 2 - x ** 2 - sideC ** 2) / (-2 * x * sideC))))
-                print("The measure of side A is: " + str(measureA))
-                print("The measure of angle B is: " + str(degB))
-                print("The measure of angle C is: " + str(degC))
+        degB = math.degrees(math.acos((sideB ** 2 - x ** 2 - sideC ** 2) / (-2 * x * sideC)))
+        degC = 180 - angleA - (math.degrees(math.acos((sideB ** 2 - x ** 2 - sideC ** 2) / (-2 * x * sideC))))
+        print("The measure of side A is: " + str(measureA))
+        print("The measure of angle B is: " + str(degB))
+        print("The measure of angle C is: " + str(degC))
 
 
 
