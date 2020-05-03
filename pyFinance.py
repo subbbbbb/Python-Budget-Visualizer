@@ -24,8 +24,8 @@ def getSalary():
     return salary
 
 
-def getTax():
-    getTaxRate()
+def getTax(salary):
+    taxRate = getTaxRate()
     tax = salary * taxRate
     print(
         "\nKeep in mind, due to a variety of variables, your income tax will vary, depending on state legislature, "
