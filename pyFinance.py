@@ -33,3 +33,17 @@ def getTax(salary):
     print("\nYour estimated income tax per month is: $" + str(tax))
     return tax
 
+def main():
+    salary = getSalary()
+    tax = getTax(salary)
+    print(
+        "\nLet's visualize your spending!\nWe will separate your basic budget into 5 categories - Housing, Food, "
+        "Transportation, Bills/Utilities/Health Care, Leisure")
+    housing = float(input("\nEnter in how much you spend on housing/rent/etc."))
+    transportation = float(input("Enter in how much you spend on transportation (traveling to work/ridesharing/etc.)"))
+    bills = float(input(
+        "Enter in how much you spend on all of your other bills (utilities, subscriptions, healthcare "
+        "fees/medications, etc.) "))
+    leisure = float(input("Enter in how much you spend on any other \"fun\" things."))
+    savings = (salary) - (housing + transportation + bills + leisure + tax)
+
