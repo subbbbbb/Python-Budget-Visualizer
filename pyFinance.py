@@ -12,9 +12,14 @@ stateList = {"Alabama": 0.035, "Alaska": 0, "Arizona": 0.03565, "Arkansas": 0.03
              "Utah": 0.0495, "Vermont": 0.0615, "Virginia": 0.03875, "Washington": 0, "West Virginia": 0.0475,
              "Wisconsin": 0.05825, "Wyoming": 0, "District of Columbia": 0.06475}
 
+
 def getTaxRate():
     state = input("Enter in the state that you live in")
     taxRate = stateList[state]
     return taxRate
 
+
+def getSalary():
+    salary = float(input("Enter in your monthly salary"))
+    return salary
 
