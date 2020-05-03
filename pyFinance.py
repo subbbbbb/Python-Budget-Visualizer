@@ -23,3 +23,13 @@ def getSalary():
     salary = float(input("Enter in your monthly salary"))
     return salary
 
+
+def getTax():
+    getTaxRate()
+    tax = salary * taxRate
+    print(
+        "\nKeep in mind, due to a variety of variables, your income tax will vary, depending on state legislature, "
+        "this provides an average estimate")
+    print("\nYour estimated income tax per month is: $" + str(tax))
+    return tax
+
