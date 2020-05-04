@@ -57,3 +57,9 @@ def main():
 
     if (housing + transportation + bills + leisure + tax < salary):
         print("You are saving $" + str(savings) + " every month.")
+    if (housing + transportation + bills + leisure + tax > salary):
+        print(
+            "You are spending more than you are making and going into debt of $" + str(abs(savings)) + " every month.")
+
+
+main()
