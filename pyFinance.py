@@ -47,3 +47,13 @@ def main():
     leisure = float(input("Enter in how much you spend on any other \"fun\" things."))
     savings = (salary) - (housing + transportation + bills + leisure + tax)
 
+    labels = "Housing", "Transportation", "Bills", "Leisure", "Savings", "Tax"
+    sizes = [housing, transportation, bills, leisure, savings, tax]
+    fig1, ax1 = plt.subplots()
+    ax1.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90)
+    ax1.axis('equal')
+
+    plt.show()
+
+    if (housing + transportation + bills + leisure + tax < salary):
+        print("You are saving $" + str(savings) + " every month.")
