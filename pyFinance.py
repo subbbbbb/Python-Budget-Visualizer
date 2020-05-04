@@ -34,6 +34,7 @@ def getTax(salary):
     return tax
 
 def main():
+    print("All numbers throughout this program are in US Dollars ($)")
     salary = getSalary()
     tax = getTax(salary)
     print(
