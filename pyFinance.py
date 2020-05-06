@@ -25,6 +25,9 @@ def getTaxRate():
 
     state = input("Enter in the state that you live in")
     taxRate = stateList[state]
+    if(taxRate == 0):
+        print("You are lucky to live in a state without income tax!")
+    print("Your tax rate is: " + str(taxRate * 100) + "%")
     return taxRate
 
 
